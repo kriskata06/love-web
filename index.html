@@ -50,7 +50,6 @@
         button:hover {
             background-color: rgb(0, 178, 190);
             position: absolute;
-            /* Added position property */
         }
     </style>
 </head>
@@ -77,15 +76,15 @@
             var label = document.createElement("label");
             label.innerText = "❤️";
 
-            // Set initial position
+     
             label.style.position = "absolute";
             label.style.left = Math.random() * (window.innerWidth - label.clientWidth) + "px";
             label.style.top = Math.random() * (window.innerHeight - label.clientHeight) + "px";
 
-            // Append label to the body
+        
             document.body.appendChild(label);
 
-            // Animate the label falling
+            
             var animationInterval = setInterval(function () {
                 label.style.top = label.offsetTop + 2 + "px";
 
